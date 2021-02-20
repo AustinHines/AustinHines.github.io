@@ -82,8 +82,9 @@ html {
     position: absolute;
     top: 200px;
     right: 50px;
-    border: 3px solid rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(0, 0, 0, 0.8);
     border-radius: 50%;
+    background-color: black;
 }
 
 #hero {
@@ -165,6 +166,52 @@ html {
     background-image: url("images/pic.png");
     
 }
+/* end work */
+
+/* experience */
+#experience {
+    
+    color: black;
+}
+
+.about-top {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-top h1 {
+    font-size:xx-large;
+    font-weight: 300;
+}
+
+.about-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url("images/blackpaper.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
     
 
 
@@ -174,13 +221,13 @@ html {
 
 
 
+/* end experience */
 
 
 
 
 
 
-/* work */
 
 
 
