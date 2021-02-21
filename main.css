@@ -62,17 +62,17 @@ html {
 }
 
 #element{
-animation:4s ease 2s normal forwards 1 fadein;
--webkit-animation:4s ease 2s normal forwards 1 fadein;
+animation:2s ease 1s normal forwards 1 fadein;
+-webkit-animation:2s ease 2s normal forwards 1 fadein;
 opacity:0
 }
-
-
-
-
-
-
 /* end hero-animation */
+
+
+
+
+
+
 .container {
     min-height: 100vh;
     min-width: 100%;
