@@ -32,17 +32,6 @@ html {
     animation-delay: 3s;
 }
 
-#hero h1 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: rgb(111, 0, 255);
-    animation: text_reveal_box 1.5s ease;
-    animation-delay: 1.5s;
-}
-
 #hero h1:nth-child(1) span {
     animation-delay: 0.5s;
 }
@@ -60,6 +49,29 @@ html {
     animation: text_reveal_name 0.5s ease forwards;
     animation-delay: 3s;
 }
+
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(111, 0, 255);
+    animation: text_reveal_box 1.5s ease;
+    animation-delay: 1.5s;
+}
+
+#element{
+animation:4s ease 2s normal forwards 1 fadein;
+-webkit-animation:4s ease 2s normal forwards 1 fadein;
+opacity:0
+}
+
+
+
+
+
+
 /* end hero-animation */
 .container {
     min-height: 100vh;
@@ -116,21 +128,19 @@ html {
     font-size: 25px;
     color: rgba(255, 255, 255, 0);
 }
-    
+
 /* End Hero Section */
 /* work */
 
-
 .work-top {
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .work-top h1 {
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: 300;
-    
 }
 
 .work-item {
@@ -146,12 +156,10 @@ html {
     margin: 10px 5%;
     color: white;
     text-decoration: none;
-    
 }
 
 .work-item a {
     color: white;
-    
 }
 
 .work-item a:hover {
@@ -164,24 +172,22 @@ html {
 
 .pic-back {
     background-image: url("images/pic.png");
-    
 }
 /* end work */
 
 /* experience */
 #experience {
-    
     color: black;
 }
 
 .about-top {
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .about-top h1 {
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: 300;
 }
 
@@ -200,37 +206,7 @@ html {
     text-decoration: none;
 }
 
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
 /* end experience */
-
-
-
-
-
-
-
-
-
 
 /* key Frames */
 @keyframes text_reveal_box {
@@ -255,4 +231,13 @@ html {
         font-weight: 500px;
     }
 }
+/* img keyframes */
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
 /* End Key Frames */
