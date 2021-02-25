@@ -219,53 +219,54 @@ html {
     padding: 5px;
     font-size: 50px;
 }
+    
 .item1 {
     grid-row: auto;
 }
 /* end About */
 
 /* Contact Section */
-/* .content-wrap {
+ #contact {
+    background-image: url(images/blackpaper.jpg);
+    background-size: cover;
+ }
+
+
+
+.content-wrap {
     width: 80%;
     height: auto;
     margin: auto;
     display: flex;
-    flex-wrap:wrap;
-    
+    flex-wrap:nowrap;
 }
+    
+    
+
+    
 
 .contact-in{
     padding: 40px 30px;
-}
-
-.contact-in:nth-child(1){
-    flex: 30%;
-    background: url("images/typing.jpg"); 
-    background-size: cover;
-    color: black;
     
 }
 
-.contact-in::after {
-    content: "";
-    background-color: black;
-    opacity: 0.3;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-
+.contact-in:nth-child(1){
+    flex: 20%;
+    color: white;
 }
+    
+    
+    
+
+
 
 .contact-in:nth-child(2){
     flex: 45%;
-    background-color:rgb(111, 0, 255); 
+    background-color:rgba(0, 0, 0, 0.4); 
 }
 
 .contact-in:nth-child(3){
-    flex: 25%;
+    flex: 35%;
     padding: 0;
 }
 
@@ -281,6 +282,7 @@ html {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
+    color: #fff;
 }
 
 .contact-in h2 i  {
@@ -306,6 +308,7 @@ html {
 .contact-in form {
     width: 100%;
     height: auto;
+    color: white;
 }
 
 .contact-in-input {
@@ -320,6 +323,7 @@ html {
     color: 000;
     font-size: 12px;
     font-weight: 300;
+    color: white;
     
 }
 
@@ -335,15 +339,21 @@ html {
     
     font-size: 12px;
     font-weight: 300;
-    color: #fff;
+    color: white;
     
 }
 
 .contact-in-textarea::placeholder {
-    color: #fff;
+    color: white;
     
     
 }
+
+.contact-in-input::placeholder {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
 
 .contact-in-btn {
     width: 100%;
@@ -351,7 +361,7 @@ html {
     border: 1px solid #fff;
     outline: none;
     background: transparent;
-    color: #fff;
+    color: white;
     font-size: 12px;
     font-weight: 300;
     cursor: pointer;
@@ -361,7 +371,7 @@ html {
     width: 100%;
     height: 100%;
     
-} */
+} 
 
 
     
