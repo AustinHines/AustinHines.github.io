@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-        <link rel="stylesheet" href="main.css">
-   
+    <link rel="stylesheet" href="main.css">
+
 
 </head>
 
@@ -127,11 +127,20 @@
                 <div id="contact">
                     <h2>Get in Touch</h2>
                     <div id="contact-form">
-                            <form action="https://formspree.io/f/xgepjvwl" method="POST">
-                            <input type="hidden" name="_subject" value="Contact request from personal website" />
-                            <input type="email" name="_replyto" placeholder="Your email" required>
-                            <textarea name="message" placeholder="Type your message" required></textarea>
+                        <form action="https://formspree.io/f/xgepjvwl" method="POST">
+                            <label>
+                                Your email:
+                                <input type="text" name="_replyto">
+                            </label>
+                            <label>
+                                Your message:
+                                <textarea name="message"></textarea>
+                            </label>
+
+                            <!-- your other form fields go here -->
+
                             <button type="submit">Send</button>
+                        </form>
                         </form>
                     </div>
                 </div>
@@ -139,7 +148,7 @@
 
 
 
-                    <!-- <input type="text" placeholder="Full Name" class="contact-in-input">
+                <!-- <input type="text" placeholder="Full Name" class="contact-in-input">
                <input type="text" placeholder="Email" class="contact-in-input">
                <input type="text" placeholder="Subject" class="contact-in-input">
                <textarea placeholder="Message" class="contact-in-textarea"></textarea>
