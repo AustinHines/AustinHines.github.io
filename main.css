@@ -206,7 +206,7 @@ html {
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url("images/blackpaper.jpg");
+    background-image: url("images/StainWood.jpg");
     background-size: cover;
     margin: 10px 5%;
     color: white;
@@ -215,6 +215,12 @@ html {
 /* end work */
 
 /* About section */
+
+
+
+#about a {
+    color: white;
+}
 
 .grid-container {
     display: grid;
@@ -231,7 +237,7 @@ html {
 
 /* Contact Section */
  #contact {
-    background-image: url(images/blackpaper.jpg);
+    background-image: url(images/Woodback.jpg);
     background-size: cover;
  }
 
@@ -265,8 +271,12 @@ html {
 
 
 .contact-in:nth-child(2){
-    flex: 45%;
-    background-color:rgba(0, 0, 0, 0.4); 
+    flex: 40%;
+    background-image: none;
+    padding-right: 50px ;
+    
+    
+    
 }
 
 .contact-in:nth-child(3){
@@ -307,6 +317,8 @@ html {
 
 
 
+
+
 .contact-in p {
     font-size: 14px;
     font-weight: 300;
@@ -314,8 +326,8 @@ html {
 }
 
 .contact-in form {
-    width: 100%;
-    height: auto;
+   width: 100%;
+    height: auto; 
     color: white;
 }
 
@@ -344,18 +356,19 @@ html {
     padding-top: 5px;
     padding-left: 5px;
     background: transparent;
-    
     font-size: 12px;
     font-weight: 300;
     color: white;
     
 }
+    
+    
 
 .contact-in-textarea::placeholder {
     color: white;
-    
-    
 }
+    
+    
 
 .contact-in-input::placeholder {
     color: white;
