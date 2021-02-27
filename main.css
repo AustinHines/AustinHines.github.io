@@ -163,6 +163,20 @@ html {
     text-decoration: none;
 }
 
+.work-item:nth-child(1) {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url("images/StainWood.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+    color: white;
+    text-decoration: none;
+}
 
 
 #work .work-item:nth-child(4) p  {
@@ -232,10 +246,11 @@ html {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-columns: 50px 50px 50px 50px 50px;
     grid-gap: 10px;
     padding: 5px;
     font-size: 50px;
+    padding-left: 0;
 }
     
 .item1 {
@@ -401,14 +416,14 @@ html {
     height: 100%;
     
 } 
-
-
-    
-    
-    
-    
-
 /* End Contact */
+
+
+    
+    
+    
+    
+
 
 /* key Frames */
 @keyframes text_reveal_box {
@@ -452,4 +467,27 @@ html {
     }
 }
 
-/* End Key Frames */
+/* End Key Frames /*
+
+
+/* Media Queries */
+@media (max-width:520px) {
+    img {
+        display: none;
+    }
+    #hero i {
+        display: none;
+        
+    }
+
+    .contact-in:nth-child(2) {
+        display: none;
+    }
+
+    .contact-in:nth-child(3) {
+        display: none;
+    }
+
+}
+
+/* End Media Queries */
