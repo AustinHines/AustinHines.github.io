@@ -489,7 +489,7 @@ html {
     }
 }
 
-@media (orientation:landscape) and (max-width:812px){
+@media (orientation:landscape) and (max-width:900px){
     #hero h1 { font-size:100%; position: relative; bottom: 200px; left: 10px; }
     img {
         display: none;
