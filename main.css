@@ -487,7 +487,17 @@ html {
     .contact-in:nth-child(3) {
         display: none;
     }
-
 }
+
+@media (orientation:landscape) and (max-width:812px){
+    #hero h1 { font-size:100%; position: relative; bottom: 200px; left: 10px; }
+    img {
+        display: none;
+    }
+    #hero i {
+        position: relative; bottom: 150px; left: 10px;
+    }
+}
+
 
 /* End Media Queries */
