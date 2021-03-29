@@ -13,7 +13,7 @@ let PlayerMoves = {
     calcAttack: function () {
         //who attacks first
         let getPlayerSpeed = player.speed;
-        let getenemySpeed = enemy.speed;
+        let getEnemySpeed = enemy.speed;
         //Player attacks
         let playerAttack = function () {
             let calcBaseDamage;
@@ -33,7 +33,7 @@ let PlayerMoves = {
         //Enemy Attacks
         let enemyAttack = function () {
             let calcBaseDamage;
-            if (player.mana > 0) {
+            if (enemy.mana > 0) {
                 calcBaseDamage = enemy.strength * enemy.mana / 1000;
             } else {
                 calcBaseDamage = enemy.strength * enemy.agility / 1000;
@@ -49,7 +49,7 @@ let PlayerMoves = {
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
         //INITATE ATTACKS
-        if (getPlayerSpeed >= getenemySpeed) {
+        if (getPlayerSpeed >= getEnemySpeed) {
             let playerAttackValues = playerAttack();
             let totalDamage = playerAttackValues[0] * playerAttackValues[1];
             enemy.health = enemy.health - totalDamage;
@@ -62,9 +62,9 @@ let PlayerMoves = {
                 getEnemyHealth.innerHTML = 'Health:' + enemy.health;
                 //Enemy attacks
                 let enemyAttackValues = enemyAttack();
-                let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+                let totalDamage = enemyAttackValues [0] * enemyAttackValues [1];
                 player.health = player.health - totalDamage;
-                alert("Enemy hit"  +  enemyAttackValues[0]  +  "damage"  +  enemyAttackValues[1]  +  "Times");
+                alert("Enemy hit "  +  enemyAttackValues[0]  +  " damage "  +  enemyAttackValues[1]  +  " Times");
                 if (enemy.health <= 0) {
                     alert("You Lose!!! refresh the browser to play again");
                     getPlayerHealth.innerHTML = 'Health: 0';
