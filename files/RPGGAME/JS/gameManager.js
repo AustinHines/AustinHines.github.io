@@ -7,16 +7,16 @@ let GameManager = {
     resetPlayer: function (classType) {
         switch (classType) {
             case "Warrior":
-                player = new Player(classType, 300, 0, 300, 100, 100);
+                player = new Player(classType, 400, 0, 300, 200, 100);
                 break;
             case "Rouge":
-                player = new Player(classType, 100, 0, 200, 200, 300);
+                player = new Player(classType, 100, 0, 300, 200, 300);
                 break;
             case "Hunter":
-                player = new Player(classType, 100, 0, 100, 300, 300);
+                player = new Player(classType, 100, 0, 100, 400, 300);
                 break;
             case "Mage":
-                player = new Player(classType, 200, 300, 100, 100, 100);
+                player = new Player(classType, 200, 0, 100, 100, 200);
                 break;
         }
         let getInterface = document.querySelector(".interface");
@@ -51,5 +51,5 @@ let GameManager = {
         getHeader.innerHTML = '<p>Task: Choose your move</p>';
         getActions.innerHTML = '<a href="#" class="button-prefight" onclick="PlayerMoves.calcAttack()">Attack</a>';
         getEnemy.innerHTML = '<img src= "img/avatar-enemies/'+ enemy.classType +'.png" alt = "'+ enemy.Type +'" class ="img-avatar"><div><h3>'+ enemy.classType +' </h3><p class = "health-enemy">Health:'+ enemy.health +'</p><p>Mana:'+ enemy.mana +'</p><p>Strength:'+ enemy.strength +'</p><p>Agility:'+ enemy.agility +'</p><p>speed:'+ enemy.speed +'</p></div> ';
-    }
+    },
 };
