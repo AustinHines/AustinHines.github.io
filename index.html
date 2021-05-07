@@ -1,150 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austin Hines</title>
-    <!-- CSS link -->
-    <link rel="stylesheet" href="main.css">
-    <!-- Google font link -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <!-- AOS Link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
+	<title>Austin Hines Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
-<body>
-    <section class="hero" data-aos="fade-left">
-        <div class="info main-header">
-            <h1>Austin Hines</h1>
-            <h6>Web Developer</h6>
-            <a href="https://github.com/AustinHines" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/austin-hines-bgky/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="My-Resume-1 copy.pdf">Resume</a>
-        </div>
-    </section>
+<body class="is-preload">
 
-    <header class="main-header" data-aos="fade-right">
-        <h1><span>My Work</span></h1>
-        <p>Take a look at some of the work I have done.</p>
-    </header>
-    <main class="container">
-        <section class="card" data-aos="fade-left">
-            <img src="img/rpg.png" alt="">
-            <div>
-                <h3>RPG GAME</h3>
-                <a href="https://github.com/AustinHines/RPGGame" target="_blank" class="btn">Source Code</a>
-                <a href="files/RPGGAME/index.html" target="_blank" class="btn">View it</a>
-            </div>
-        </section>
-        <section class="card" data-aos="fade-right">
-            <img src="img/breadBack.png" alt="">
-            <div>
-                <h3>Bread Mock Page</h3>
-                <a href="https://github.com/AustinHines/LePain" target="_blank" class="btn">Source Code</a>
-                <a href="files/LePainPort/index.html" target="_blank" class="btn">View it</a>
-            </div>
-        </section>
-        <section class="card" data-aos="fade-left">
-            <img src="img/password.png" alt="">
-            <div>
-                <h3>Password Generator</h3>
-                <a href="https://github.com/AustinHines/PassWordGenerator" target="_blank" class="btn">Source Code</a>
-                <a href="files/PasswordGen/index.html" target="_blank" class="btn">View it</a>
-            </div>
-        </section>
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
 
-        <!-- Future Work -->
-        <!-- <section class="card" data-aos="fade-right">
-         <img src="https://via.placeholder.com/350x150" alt="">
-         <div>
-             <h3>Holder</h3>
-             <a href="" class="btn">Source Code</a>
-             <a href="" class="btn">View it</a>
-         </div>
-     </section>  -->
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Solid State</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
 
-        <section class="about main-header" data-aos="fade-right">
-            <h1>About Me</h1>
-            <h3>I am Austin Hines a 18 year old web developer who loves everything outdoors and technology <br> along
-                with being the number one Saints fan!!!</h3>
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="#banner">Home</a></li>
+					<li><a href="#one">About</a></li>
+					<li><a href="#four">Work</a></li>
+					<li><a href="#footer">Contact</a></li>
 
-            <div class="grid-container">
-                <div class="item-1"><i class="fas fa-football-ball"></i></div>
-                <div class="item2"><i class="fas fa-fish"></i></div>
-                <div class="item3"><i class="fas fa-tree"></i></div>
-                <div class="item4"><i class="fab fa-jedi-order"></i></div>
-               <div class="item5"><i class="fas fa-code"></i></div>
-               <div class="item6"><i class="fas fa-code"></i></div>
-               <div class="item7"><i class="fas fa-code"></i></div>
-               <div class="item8"><i class="fas fa-gamepad"></i></div>
-            </div>
-        </section>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
 
-        <section class="contact main-header">
-            <section id="contact">
-                <div class="content-wrap">
-                    <div class="contact-in">
-                        <h1>Contact info </h1>
-                        <h2><i class="fas fa-comment-dots"></i>Phone</h2>
-                        <p>270-776-0369</p>
-                        <h2><i class="fas fa-envelope-open"></i>Email</h2>
-                        <p>AustinHines0605@gmail.com</p>
-                        <h2><i class="far fa-map"></i>location </h2>
-                        <p>Bowling Green, Kentucky, USA</p>
-                    </div>
-        </section>
-        </section>
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<div class="logo"><span class="fas fa-laptop-code"></i></span></div>
+				<h2>Hello My Name Is <br><span>Austin</span> Hines</h2>
+				<p>Web Developer</p>
+				<a href="My-Resume.pdf">Resume</a>
+			</div>
+		</section>
 
-        <br>
+		<!-- Wrapper -->
+		<section id="wrapper">
 
-        <div id="contact-form">
-            <form action="https://formspree.io/f/xgepjvwl" method="POST" class="contact-in">
+			<!-- One -->
+			<section id="one" class="wrapper spotlight style1">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/personal.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major">About Me</h2>
+						<p>I'm a web developer out of Franklin Ky. who loves a challenge and anything technology</p>
 
+					</div>
+				</div>
+			</section>
 
-                <input type="text" placeholder="Email" class="contact-in-input" name="_replyto">
-                <textarea placeholder="Message" class="contact-in-textarea" name="message"></textarea>
-                <input type="submit" placeholder="submit" class="contact-in-btn">
-            </form>
-            </form>
-        </div>
-                
+			<!-- Two -->
+			<section id="two" class="wrapper alt spotlight style2">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/Saints.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Some Hobbies</h2>
+						<p>I love watching football and being outdoors whenever i'm not working on my computer </p>
 
+					</div>
+				</div>
+			</section>
 
+			<!-- Three -->
+			<section id="three" class="wrapper spotlight style3">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/coding.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major"> My Knowledge</h2>
+						<p>I recieved most of my Knowledge in BC Skills Web Development Academy a 15 week course were I
+							learned Everything from HTML5, CSS3 to Javascript and React. But my determination to learn
+							never stops</p>
+						<a href="#" class="special">Learn more</a>
+					</div>
+				</div>
+			</section>
 
+			<!-- Four -->
+			<section id="four" class="wrapper alt style1">
+				<div class="inner">
+					<h2 class="major">My Work</h2>
+					<p>Take A look at some project I have worked on!</p>
+					<section class="features">
+						<article>
+							<a href="#" class="image"><img src="images/pokedex.png" alt="Poke Dex" /></a>
+							<h3 class="major">Poke-Dex</h3>
+							<p>I created a Poke Dex using The pokemon API</p>
+							<a href="https://brave-jang-0ad44b.netlify.app/" class="special" target="_blank">view it</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/passwordGen.png" alt="Password Generator" /></a>
+							<h3 class="major">Random Password Generator</h3>
+							<p>A Random password generator depending on your choices</p>
+							<a href="https://thirsty-perlman-80518d.netlify.app/" class="special" target="_blank">View
+								It</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/rpg.png" alt="" /></a>
+							<h3 class="major">"RPG" Game</h3>
+							<p>A "RPG" game damage based on characters stats</p>
+							<a href="https://wonderful-brattain-a67f65.netlify.app/" class="special"
+								target="_blank">View It</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/bread.png" alt="" /></a>
+							<h3 class="major">Mock Bread Page</h3>
+							<p>A mock bread Page I created using Bootstrap</p>
+							<a href="https://cocky-colden-35fd7e.netlify.app/" class="special" target="_blank">View
+								It</a>
+						</article>
+					</section>
 
+				</div>
+			</section>
 
+		</section>
 
+		<!-- Footer -->
+		<section id="footer">
+			<div class="inner">
+				<h2 class="major">Get in touch</h2>
+				<p>If you are interested please be sure to contact at the links below</p>
+				<form method="post" action="https://formspree.io/f/xgepjvwl">
+					<div class="fields">
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="email" name="_replyto" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
+				</form>
+				<ul class="contact">
+					<li class="icon solid fa-home">
+						Bowling Green, Ky
+					</li>
+					<li class="icon solid fa-phone">(270) 776-0369</li>
+					<li class="icon solid fa-envelope">AustinHines0605@gmail.com</li>
+					<li class="icon brands fa-linkedin"><a
+							href="https://www.linkedin.com/in/austin-hines-bgky/">https://www.linkedin.com/in/austin-hines-bgky/</a></li>
+					<li class="icon brands fa-github"><a
+							href="https://github.com/AustinHines">https://github.com/AustinHines</a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled Inc. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</section>
 
+	</div>
 
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-    </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 400,
-            duration: 1000
-        });
-    </script>
 </body>
 
 </html>
